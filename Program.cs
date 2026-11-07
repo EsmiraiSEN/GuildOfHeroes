@@ -25,3 +25,14 @@ Console.WriteLine($"Имя: {artem.Name}");
 Console.WriteLine($"Здоровье: {artem.Health}");
 Console.WriteLine($"Уровень: {artem.Level}");
 Console.WriteLine($"Опыт: {artem.Experience}");
+
+Console.WriteLine();
+Console.WriteLine(">>> Библиотека <<<");
+
+Book triumphalArch = new Book("Триумфальная арка", "Эрих Мария Ремарк", 1945, 640);
+Book crime = new Book("Преступление и наказание", "Ф. Достоевский", 1866, 671);
+Book littlePrince = new Book("Маленький принц", "А. де Сент-Экзюпери", 1943, 96);
+
+Console.WriteLine($"{triumphalArch.Title} | {triumphalArch.Author} | {triumphalArch.Year} | {triumphalArch.Pages} стр. | Доступна: {triumphalArch.IsAvailable}");
+Console.WriteLine($"{crime.Title} | {crime.Author} | {crime.Year} | {crime.Pages} стр. | Доступна: {crime.IsAvailable}");
+Console.WriteLine($"{littlePrince.Title} | {littlePrince.Author} | {littlePrince.Year} | {littlePrince.Pages} стр. | Доступна: {littlePrince.IsAvailable}");
