@@ -32,9 +32,11 @@ Console.WriteLine($"Восстановление: {alexander.Health}");
 Console.WriteLine($"Артём без изменений: {artem.Health}/{artem.MaxHealth}");
 // Конец проверки здоровья
 
+Hero spacedProbe = new Hero("   Александр   ", 150);
+Hero emptyProbe = new Hero("   ", 100);
 
-
-
+Console.WriteLine($"Имя с пробелами: [{spacedProbe.Name}]");
+Console.WriteLine($"Пустая запись: [{emptyProbe.Name}]");
 
 
 
