@@ -4,7 +4,7 @@ public class Book {
     public int Year;
     public int Pages;
     public bool IsAvailable;
-    public double Rating;
+    public double Rating { get; private set; }
 
     public Book(string title, string author, int year, int pages) {
         Title = title;
